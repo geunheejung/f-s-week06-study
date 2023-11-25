@@ -1,24 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Counter from "./components/Counter";
+import CounterControl from "./components/CountControl";
+import "./App.css";
+import NameCard from "./components/NameCard";
+import Step4Counter from "./components/step4/Step4Counter";
+import Step4CounterControl from "./components/step4/Step4CountControl";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Counter />
+      <Counter />
+      <CounterControl />
+
+      <NameCard />
+
+      <h1>Step4</h1>
+      <div>
+        <Step4Counter />
+        <Step4CounterControl />
+      </div>
     </div>
   );
 }
